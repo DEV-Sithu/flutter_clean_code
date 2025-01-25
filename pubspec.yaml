@@ -1,0 +1,51 @@
+name: flutter_clean_code
+description: "Standard"
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ^3.6.0
+
+ #App External Library
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  get: ^4.6.6
+  rabbit_converter: ^2.0.0
+  logger: ^2.5.0
+
+ #Developer
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  json_serializable: ^6.9.3
+
+flutter:
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/logos/
+    - assets/fonts/
+    - assets/svgs/
+    - assets/jsons/
+    - assets/videos/
+    - assets/mp3/
+  #--------------- LOCAL FONTS ------------------#
+  fonts:
+    - family: Myanmar Unicode
+      fonts:
+        - asset: assets/fonts/mm3.ttf
+          weight: 300
+        - asset: assets/fonts/myanmarText.ttf
+        - asset: assets/fonts/myanmarTextBold.ttf
+        - asset: assets/fonts/pyiDaungSuNumbers.ttf
+        - asset: assets/fonts/pyiDaungSuRegular.ttf
+        - asset: assets/fonts/pyiDaungSuBold.ttf
+
+
+
