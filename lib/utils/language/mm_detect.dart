@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 import 'package:rabbit_converter/rabbit_converter.dart';
 
-class MDetect {
-  MDetect._();
+class MMDetect {
+  MMDetect._();
 
   static bool isUnicode() {
     return _textSize("က").width == _textSize('က္က').width;
@@ -20,11 +20,11 @@ class MDetect {
 
 
   static String mmText(String text) {
-    if (MDetect.isUnicode()) {
+    if (MMDetect.isUnicode()) {
       Logger().d("UNICODE");
     } else {
       Logger().d("ZawGyi");
     }
-    return MDetect.isUnicode() ? text : Rabbit.uni2zg(text);
+    return MMDetect.isUnicode() ? text : Rabbit.uni2zg(text);
   }
 }
