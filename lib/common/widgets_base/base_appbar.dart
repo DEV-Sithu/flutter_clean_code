@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_code/common/widgets_base/mk_myanmar_text.dart';
+import 'package:flutter_clean_code/common/widgets_base/myanmar_textview.dart';
 import '../../utils/constants/app_colors.dart';
 import 'base_back_pressed.dart';
 
@@ -13,7 +13,7 @@ class BaseAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context)  => AppBar(
-    title: MKMyanmarText(text: title.toString(), size: 14, color: Colors.white, isBold: true),
+    title: MyanmarTextView( title.toString(), size: 14, color: Colors.white),
     backgroundColor: backgroundColor,
     leading:  const BaseBackPressed(),
     actions: actions,

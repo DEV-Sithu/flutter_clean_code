@@ -7,5 +7,8 @@ class AppConstants {
   static const String mSecretAPIKey = "your_api_key";
 
   static const List<String> deviceType = ['small', 'large', 'window'];
+
+  static const int maxLengthSmall = 20;
+  static const int maxLengthLarge = 40;
   
 }
